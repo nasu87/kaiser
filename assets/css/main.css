@@ -1,0 +1,449 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    margin-bottom: 27px;
+    background-color: #000000;
+    
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+  }
+  nav {
+    background-color: #aaaddb46;
+    color: white;
+   
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  }
+  nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+  
+    justify-content: flex-end;
+    align-items: center;
+  }
+  nav li {
+    height: 50px;
+  }
+  nav a {
+    height: 100%;
+    padding: 0 30px;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    text-transform: capitalize;
+    color: white;
+    font-weight: bold;
+  }
+  nav a:hover {
+    background-color: #2b7dc93d;
+    cursor: pointer;
+    
+  }
+
+  nav li:first-child {
+    margin-right: auto;
+  }
+  .sideBar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    backdrop-filter: blur(10px);
+    background-color: #ffffff27;
+    box-sizing: -10px 0 -10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .sideBar li {
+    width: 100%;
+  }
+  .sideBar a {
+    width: 100%;
+  }
+  .menubtn {
+    display: none;
+  }
+  .first-box {
+    color: white;
+    font-size: 25px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    padding: 19px;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .first-box span {
+    background-color: rgba(73, 59, 148, 0.397);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+  }
+  
+  .box-2 {
+    color: rgba(224, 235, 221, 0.555);
+    font-size: 15px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+    word-spacing: 5px;
+    text-align: center;
+    padding: 30px;
+    font-style: normal;
+    line-height: 25px;
+    font-family: sans-serif;
+  }
+  .box3 {
+    margin-top: 0;
+    padding-top: 0;
+    color: aqua;
+    font-style: normal;
+    padding-left: 6px;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+  
+  .box4 {
+    color: white;
+    padding: 8px;
+    text-align: center;
+    margin-top: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .box-4 {
+    background-color: rgb(0, 119, 255);
+    height: 35px;
+    text-align: center;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    padding: 6px;
+    justify-content: center;
+    align-items: center;
+  }
+  .box4 #para {
+    margin-top: 9px;
+    padding: 15px;
+    text-align: center;
+    line-height: 28px;
+  }
+  
+  .gallery {
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .gallery button {
+    height: 35px;
+    padding: 19px;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .gallery button a {
+    color: black;
+    font-size: 1.2rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-style: normal;
+    text-decoration: none;
+  }
+  .imgs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  padding-bottom: 50px;
+    flex-direction: column;
+  }
+  .img-in {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .img-in img {
+    margin-top: 10px;
+    height: 230px;
+    border-radius: 5px;
+    width: 85%;
+    /* width: max-content; */
+  }
+  footer {
+    margin-top: 10px;
+    /* border: 3px solid white; */
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    margin-top: 8px;
+    border-top: 2px solid white;
+  }
+  
+  /*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.footer {
+  margin-top: 30px;
+  padding: 30px 0;
+  font-size: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.footer .copyright {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.footer .credits {
+  padding-top: 6px;
+  text-align: center;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.footer .credits a {
+  color: red;
+}
+
+  
+  
+  
+
+/*  */
+
+.foot-span {
+  color: aqua;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
+}
+
+.foot-er {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(146, 88, 120);
+  text-decoration: none;
+}
+
+.footer-1 {
+  color: rgb(221, 71, 221);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.insta {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(243, 19, 142);
+  text-decoration: none;
+}
+.rights {
+  color: aqua;
+}
+
+
+/*  */
+.btn-con {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-con button {
+  background-image: linear-gradient(to bottom right, #01ff88, #0e197d);
+  color: black;
+  cursor: pointer;
+  height: 40px;
+  width: 15%;
+  border: navajowhite;
+  text-align: center;
+  margin-top: 5px;
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 5%;
+}
+.btn-con a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+
+
+.full{background-color: rgb(20, 20, 22); padding: 40px; margin: 1px; width: 70%;
+}
+
+
+.dev-pro{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dev-pro button{
+  height: 40px;
+  width: 140px;
+  border: none;
+  border-radius: 5px;
+  background-color: aquamarine;
+}
+.dev-pro button a{
+text-decoration: none;
+color: #000000;
+font-weight: 400;
+font-family: monospace;
+
+}
+
+
+
+
+
+
+
+
+@media (max-width:500px) {
+  .btn-con button {
+      width: 140px;
+    }
+}@media (min-width:500px) {
+  .btn-con button {
+      width: 140px;
+    }
+}
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  @media (min-width:500px) {
+    .imgs {
+      display: flex;
+      justify-content: center;
+  
+      align-items: center;
+      /* flex-direction: column; */
+    }
+    .img-in {
+      display: flex;
+      justify-content: center;
+      /* flex-direction: row; */
+      align-items: center;
+      width: 70%;
+    }
+    .img-in img {
+      margin-top: 10px;
+      height: 220px;
+      /* object-fit: cover; */
+      border-radius: 5px;
+      width: 70%;
+     
+    }
+    .first-box{
+      
+      padding: 30px;
+  
+      text-align: center;
+    }
+    .first-box span{
+      background-color: rgba(46, 53, 53, 0.514);
+      border-radius: 6px;
+      padding: 2px;
+    }
+    .box-2{
+      color: rgb(235, 228, 233);
+      text-align: center;
+      padding: 30px;
+      font-style: normal;
+      line-height: 25px;
+      font-family: sans-serif;
+    }
+    .box3{
+      color: rgba(197, 194, 194, 0.644);
+      padding: 6px;
+      text-align: center;
+  
+    }
+    .box4 #para{
+     padding: 15px;
+     text-align: center;
+     line-height: 28px;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  @media (min-width:800px) {
+    .imgs {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    
+      flex-direction: row;
+    }
+    .img-in {
+      display: flex;
+      /* justify-content: center; */
+      align-items: center;
+      width: 100%;
+    }
+    .img-in img {
+      margin-top: 10px;
+      height: 250px;
+      border-radius: 5px;
+      width: 90%;
+      /* width: max-content; */
+    }
+    .box{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      
+    }
+    .first-box{
+      width: 54%;
+      line-height: 50px;
+      text-transform: capitalize;
+  
+    }
+    .box-2{
+      width: 54%;
+      /* line-height: 10px; */
+      text-transform: capitalize;
+    }
+    .box4{
+      width: 54%;
+      line-height: 50px;
+      text-transform: capitalize;
+    }
+  }

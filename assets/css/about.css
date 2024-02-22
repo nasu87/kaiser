@@ -1,0 +1,152 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.ab{
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 10px;
+    margin-top: 8px;
+    height: 45px;
+}
+.ab-sec{
+    color: white;
+    margin-top: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+font-size: 1.5rem;
+    padding: 19px;
+    line-height: 40px;
+}
+.ab-sec span{
+    background-color: rgb(46, 44, 44);
+
+    padding: 2px;
+}
+
+.p-btn{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+}
+
+.p-btn button{
+    height: 40px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items:center ;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: linear-gradient(to bottom right, #FFDB01, #0E197D);
+    color: rgb(255, 247, 247);
+    font-size: large;
+    border: none;
+    border-radius: 5px;
+
+}
+.title{
+    color: white;
+    margin-top: 10px;
+}
+.title p{
+    color: white;
+    margin-top: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+font-size: 0.9rem;
+    padding: 19px;
+    line-height: 20px;
+    font-family: monospace;
+}
+.pro{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 40px;
+    align-items: center;
+    margin-top: 20px;
+}
+.pro-img{
+    margin-left: 20px;
+}
+.pro-img img{
+    height: 150px;
+    border-radius: 50%;
+  
+}
+.pro h3 ,label{
+    color: white;
+    font-size: large;
+}
+.pro a{
+    
+    text-decoration: none;
+    color: rgb(19, 220, 255);
+}
+
+
+.ab-gul{
+    color: white;
+border-top: 1px solid rgba(255, 255, 255, 0.322);
+    /* padding: 17px; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 88px;
+    height: 355px;
+}
+.ab-gul h3{
+    text-align: center;
+    padding-bottom: 10px;
+    color: aqua;
+    margin-top: 60px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.ab-gul .ab{
+    text-align: center;
+    line-height: 25px;
+    /* padding: 50px; */
+ 
+    width: 240px;
+}
+
+
+
+.test{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 55px;
+}
+.test h2,p{
+    padding-top: 24px;
+}
+.testimg img{
+   border-radius: 14px;
+}
+
+
+@media (min-width:600px) {
+    .ab-gul .ab{
+        width: 390px;
+        line-height: 35px;
+    }
+    .ab-sec{
+        text-align: center;
+        padding-left: 70px; 
+        padding-right: 70px;
+            line-height: 40px;
+        
+    }
+}

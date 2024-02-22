@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Contact Form for ski package in gulmarg </title>
+  <meta content="contact us For Package Ski in Gulmarg Etc... Full  Tour of Kashmir  and Gulmarg  with  Kasiryaa- Tour And Travels" name="description">
+  <meta content="Contact us for skiing , About Gulmarg,Ski, skiing, snow, snowboarding, Snowfall, ATV rides , Gondola rides , etc " name="keywords">
+  <meta name="author" content="Kaiser">
+<link rel="stylesheet" href="./assets/css/contact.css">
+<link rel="stylesheet" href="./assets/css/main.css" />
+<link rel="stylesheet" href="/assets/css/about.css" />
+<link rel="stylesheet" href="./assets/css/cursor.css" />
+<style>
+  @media (max-width: 800px) {
+    .hideonMob {
+      display: none;
+    }
+    .menubtn {
+      display: block;
+    }
+  }
+ 
+</style>
+</head>
+<nav>
+  <ul class="sideBar">
+    <li onclick="hide()">
+      <a href="#"
+        ><img src="/assets/svg/close.gif" height="35" width="35" alt=""
+      /></a>
+    </li>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="gallary.html">Gallery</a></li>
+    <li><a href="package.html">Package's</a></li>
+    <li><a href="contact.html">contact</a></li>
+  </ul>
+  <ul>
+    <li><a href="index.html">Kasiryaa-Tour And Travels</a></li>
+    <li class="hideonMob"><a href="index.html">Home</a></li>
+    <li class="hideonMob"><a href="about.html">About</a></li>
+    <li class="hideonMob"><a href="gallary.html">Gallery</a></li>
+    <li class="hideonMob"><a href="package.html">package</a></li>
+    <li class="hideonMob"><a href="contact.html">contact</a></li>
+    <li class="menubtn" onclick="show()">
+      <a href="#"
+        ><img
+          src="/assets/svg/bars.svg"
+          width="30"
+          height="25"
+          style="object-fit: contain; background-color: transparent;  color: white;" 
+          alt=""
+      /></a>
+    </li>
+  </ul>
+</nav>
+
+<body>
+<!-- ////////////////////////// -->
+
+  <!-- ======= Header ======= -->
+<header>
+
+</header>
+<div class="context">
+    <h2 >Contact</h2>
+    <p >Contact our team for more information about package and pricing etc.. <br>
+       <a class="atage"  href="mailto:nasirah12233@gmail.com">   &nbsp;Send Mail to us </a>or Call us &nbsp; &phone;  <a class="atage"  href=" tel:+91 9541648136">&nbsp;+91 6006092546</a> </p>
+       <div>
+        <h4 >Location: </h4>
+        <p >Kashmir, India </p>
+      </div>
+      <div>
+        <h4>Email: </h4>
+        <a class="atage"   href="mailto:nasirah12233@gmail.com">Send Mail to me</a>
+      </div>
+      <div>
+        <h4>Call:  &phone;</h4>
+        <a class="atage"   href="tel:+91 6006092546">+91 6006092546</a>
+      </div>
+</div>
+
+
+<form id="form">
+    <div class="field">
+      <label for="from_name"></label>
+      <input type="text" name="from_name" id="from_name" placeholder="Enter Your Name">
+    </div>
+    <div class="field">
+      <label for="email_id"></label>
+      <input type="text" name="email_id" id="email_id" placeholder="Email">
+    </div>
+    <div class="field">
+      <label for="number"></label>
+      <input type="text" name="number" id="number" placeholder="Number">
+    </div>
+    <div class="field">
+      <label for="number_of_guests"></label>
+      <input type="text" name="number_of_guests" id="number_of_guests" placeholder="Enter Your Name">
+    </div>
+    <div class="field">
+      <label for="message"></label>
+      <input type="text" name="message" id="message" placeholder="Subject..">
+    </div>
+  
+  
+    <input type="submit" id="button" value="Send Email" >
+  </form>
+  
+ 
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="container">
+     <div class="dev-pro">
+      <button><a href="/assets/dev_Profile/developer.html">Check Developer Profile</a></button>
+     </div>
+      <div class="credits">
+        <i class="footer-1" >
+          Web developer Nasir</i
+        >
+        <br />
+        <i>My Instagram Accounts (⊙_⊙;) </i
+        ><br/>
+        <a href="https://www.instagram.com/web.dev3/saved/all-posts/    "
+         class="insta"> web.dev3</a>
+        &nbsp;&nbsp;❌ &nbsp;&nbsp;
+        <a
+          href="https://www.instagram.com/na_su87/saved/all-posts/"
+          class="insta"> na_su87</a >
+      </div>
+    </div>
+
+    <div class="inner-cursor"></div>
+    <div class="outer-cursor"></div>
+    <!--  -->
+  </footer>
+  <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script type="text/javascript">
+
+
+
+const btn = document.getElementById('button');
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Sending...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_v15swee';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Send Email';
+      alert('Sent!');
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
+});
+
+
+
+  emailjs.init('jpcKACkvu3dL6wAs2')
+</script>
+</body>
+
+</html>
